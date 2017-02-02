@@ -11,8 +11,8 @@ Cognito setup
 
 Plus we use [GitHub Projects](https://github.com/do-team/endleg/projects/1) to maintain flow of main tasks for our team.
 
-Concept
-=======
+Concept:
+========
 
 Endleg is slightly advanced version of `rock-paper-scissors` game. Players will enter their "army" of 5 cards and submit them to fight.
 On serverside, once a day (or hourly) batchprocessing is scheduled. First it will create pairs of players, then it calculate, which player wins.
