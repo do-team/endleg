@@ -3,11 +3,11 @@ Demoproject for utilizing as many of managed AWS services as possible - all in s
 
 This is main organization repository. Here we should store documentation and also sourcode of infrastructure.
 
-IAM roles and policies
-Cloudformation templates
-API Gateway source code
-DynamoDB schemas
-Cognito setup
+IAM roles and policies  
+Cloudformation templates  
+API Gateway source code  
+DynamoDB schemas  
+Cognito setup  
 
 Plus we use [GitHub Projects](https://github.com/do-team/endleg/projects/1) to maintain flow of main tasks for our team.
 
@@ -23,14 +23,14 @@ All functionality is represented by microservices, small NodeJS scripts runing o
 Main components are:
 --------------------
 
-[Order entry](https://github.com/do-team/endleg-in) - this processes user's card order and saves them into DynamoDB. Sets a flag to "ready".
-[Scheduled batch](https://github.com/do-team/endleg-batch) - create pairs of users (set a flag "fight" for half of users). Flagging in DynamoDB will trigger next function.
-[Fight processing](https://github.com/do-team/endleg-clash) - direct comparison of two players (take one "fight" flag and one "ready" flag, then set flag to "wait"). Saves result to score table.
-[Score](https://github.com/do-team/endleg-out) - output of current score history of user.
-[Frontend](https://github.com/do-team/endleg-frontend) - written in Express / Angular.
+[Order entry](https://github.com/do-team/endleg-in) - this processes user's card order and saves them into DynamoDB. Sets a flag to "ready".  
+[Scheduled batch](https://github.com/do-team/endleg-batch) - create pairs of users (set a flag "fight" for half of users). Flagging in DynamoDB will trigger next function.  
+[Fight processing](https://github.com/do-team/endleg-clash) - direct comparison of two players (take one "fight" flag and one "ready" flag, then set flag to "wait"). Saves result to score table.  
+[Score](https://github.com/do-team/endleg-out) - output of current score history of user.  
+[Frontend](https://github.com/do-team/endleg-frontend) - written in Express / Angular.  
 
 DynamoDB tables:
 ----------------
 
-Users (via Cognito)
-Score / Statistic
+Users (via Cognito)  
+Score / Statistic  
