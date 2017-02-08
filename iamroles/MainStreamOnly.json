@@ -1,0 +1,16 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "AccessMainStreamOnly",
+            "Effect": "Allow",
+            "Action": [
+                "dynamodb:DescribeStream",
+                "dynamodb:GetRecords",
+                "dynamodb:GetShardIterator", 
+                "dynamodb:ListStreams"
+            ],
+            "Resource": "arn:aws:dynamodb:eu-central-1:322653911670:table/endleg-main/stream/*"
+        }       
+    ]           
+}

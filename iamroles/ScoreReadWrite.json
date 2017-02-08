@@ -1,0 +1,15 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "PutUpdateDeleteScore",
+            "Effect": "Allow",
+            "Action": [
+                "dynamodb:PutItem",
+                "dynamodb:UpdateItem",
+		"dynamodb:DeleteItem"
+            ],
+            "Resource": "arn:aws:dynamodb:eu-central-1:322653911670:table/endleg-score/*"
+        }
+    ]
+}
