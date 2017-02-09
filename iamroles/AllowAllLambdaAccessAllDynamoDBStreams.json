@@ -1,0 +1,26 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [ 
+        {       
+            "Sid": "AllowLambdaFunctionInvocation",
+            "Effect": "Allow",
+            "Action": [
+                "lambda:InvokeFunction"
+            ], 
+            "Resource": [
+                "*"
+            ]
+        },  
+        {   
+            "Sid": "AllAPIAccessForDynamoDBStreams",
+            "Effect": "Allow",
+            "Action": [
+                "dynamodb:GetRecords",
+                "dynamodb:GetShardIterator",
+                "dynamodb:DescribeStream",
+                "dynamodb:ListStreams"
+            ],
+            "Resource": "*"
+        }   
+    ] 
+}

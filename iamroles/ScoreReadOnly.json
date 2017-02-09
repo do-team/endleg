@@ -1,0 +1,14 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "ReadOnlyScore",
+            "Effect": "Allow",
+            "Action": [
+                "dynamodb:GetItem",
+                "dynamodb:BatchGetItem"
+            ],
+            "Resource": "arn:aws:dynamodb:eu-central-1:322653911670:table/endleg-score/*"
+        }
+    ]
+}
