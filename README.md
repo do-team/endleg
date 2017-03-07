@@ -1,3 +1,4 @@
+TEST
 # Project Endleg
 Demoproject for utilizing as many of managed AWS services as possible - all in secure and prod-like manner.
 
