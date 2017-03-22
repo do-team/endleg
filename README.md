@@ -22,7 +22,7 @@ All functionality is represented by microservices, small NodeJS scripts runing o
 
 Main components are:
 --------------------
-[User init](https://github.com/do-team/endleg-init) - after user succesfully registered the account and confirmed, user is set into DynamoDB.
+[User init](https://github.com/do-team/endleg-init) - after user succesfully registered the account and confirmed, user is set into DynamoDB.  
 [Order entry](https://github.com/do-team/endleg-in) - this processes user's card order and saves them into DynamoDB. Sets a flag to "ready".  
 [Scheduled batch](https://github.com/do-team/endleg-batch) - create pairs of users (set a flag "fight" for half of users). Flagging in DynamoDB will trigger next function.  
 [Fight processing](https://github.com/do-team/endleg-clash) - direct comparison of two players (take one "fight" flag and one "ready" flag, then set flag to "wait"). Saves result to score table.  
