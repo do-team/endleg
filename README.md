@@ -18,6 +18,8 @@ Endleg is slightly advanced version of `rock-paper-scissors` game. Players will 
 On serverside, once a day (or hourly) batchprocessing is scheduled. First it will create pairs of players, then it calculate, which player wins.
 Score is set and users are notified.
 
+![Main Schema](endleg-schema.png)  
+
 All functionality is represented by microservices, small NodeJS scripts runing on Lambda. Each component has it's own repository.
 
 Main components are:
